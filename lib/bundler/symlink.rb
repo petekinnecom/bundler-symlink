@@ -36,7 +36,7 @@ module Bundler
 
         FileUtils.mkdir_p(File.dirname(target_dir))
         Bundler.ui.info("Symlinking bundled gems into #{target_dir}")
-        FileUtils.rm_r(target_dir)
+        FileUtils.rm_r(target_dir) if File.exist?(target_dir)
         FileUtils.mv(link_dir, target_dir, force: true)
       end
     end
