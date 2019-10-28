@@ -14,11 +14,11 @@ Register the plugin with Bundler:
 
 Globally:
 
-`cd ~ &&  bundler plugin install bundler-symlink`
+`cd ~ &&  bundle plugin install bundler-symlink`
 
 Per project:
 
-`cd /path/to/project && bundler plugin install bundler-symlink`
+`cd /path/to/project && bundle plugin install bundler-symlink`
 
 
 ## Uninstall
